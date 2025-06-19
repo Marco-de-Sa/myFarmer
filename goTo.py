@@ -27,7 +27,7 @@ def goTo(x, y):
                 break
 
 
-def goToX(x, y):
+def goToUsingX(x, y):
     nx, ny = get_pos_x(), get_pos_y()
     if nx > x:
         while True:
