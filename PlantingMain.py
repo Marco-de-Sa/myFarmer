@@ -156,17 +156,15 @@ def walkTheDinosaur():
                 return
     else:
         while True:
-            if get_pos_x() == get_world_size() - 1:
-                goTo.goTo(0, 0)
-                counted += 1
-            elif get_pos_y() == 0:
+            if get_pos_y() == 0 and get_pos_x() == 0:
                 goTo.goTo(get_pos_x() + 1, get_world_size() - 1)
-            elif get_pos_y() == get_world_size() - 1:
+                counted += 1
+            elif get_pos_x() == get_world_size() - 1:
                 goTo.goTo(0, 0)
             elif get_pos_y() == get_world_size() - 1:
                 goTo.goTo(get_pos_x() + 1, 1)
             elif get_pos_y() == 1:
                 goTo.goTo(get_pos_x() + 1, get_world_size() - 1)
 
-            if counted == get_world_size() * 2 // 1:
+            if counted == get_world_size() * 1.3 // 1:
                 return

@@ -8,4 +8,3 @@ while True:
 	clear()
 	change_hat(Hats.Dinosaur_Hat)
 	PlantingMain.walkTheDinosaur()
-	unlock(Unlocks.Expand)
